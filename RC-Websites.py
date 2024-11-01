@@ -34,7 +34,7 @@ def save_results_to_json():
 
 def scan_ports():
     open_ports = []
-    for port in tqdm(range(1, 1), desc="\33[36;1m[\33[39;0m-\33[96;1m]\33[39;0m Scanning All Ports\33[39;0m",unit='\33[33;2m 𝗟𝗼𝗮𝗱𝗶𝗻𝗴…… \33[39;0m'):
+    for port in tqdm(range(1, 1050), desc="\33[36;1m[\33[39;0m-\33[96;1m]\33[39;0m Scanning All Ports\33[39;0m",unit='\33[33;2m 𝗟𝗼𝗮𝗱𝗶𝗻𝗴…… \33[39;0m'):
 
         try:
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
